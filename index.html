@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Тропами наследия</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Тропами наследия</h1>
+    <p>Учебно-методическое пособие</p>
+  </header>
+
+  <main>
+    <h2>Выберите город на карте</h2>
+  
+	
+	<div class="map-container">
+  <img src="img/belarus-map.png" usemap="#belarus" alt="Карта Беларуси" class="map" width="100%" height="auto">
+
+  <!-- Указатель -->
+  <a href="polotsk.html" class="city-marker" style="left: 52.5%; top: 45.6%;" title="Полоцк"></a>
+</div>
+
+	
+    <map name="belarus" id="belarus">
+      <area shape="circle" coords="390,100,10"  href="polotsk.html" alt="Полоцк" title="Полоцк">
+
+    </map>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Тропами наследия</p>
+  </footer>
+</body>
+</html>
