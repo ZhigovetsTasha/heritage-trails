@@ -1,1 +1,110 @@
+/* Базовая настройка */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f3e9;
+  color: #2f1d0d;
+  font-family: 'Georgia', serif;
+  background-image: none;
+}
+
+/* Полупрозрачный фон */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('../img/paper-texture.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Шапка */
+header {
+  background-color: #D3D3D3;
+  text-align: center;
+  padding: 20px 10px;
+  border-bottom: 3px solid #a1845c;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  font-size: 2.2em;
+  margin: 0;
+}
+
+header p {
+  margin-top: 5px;
+  font-style: italic;
+  color: #4d3929;
+}
+
+/* Контент */
+main {
+  flex: 1; /* ← это прижимает футер вниз */
+  text-align: center;
+  padding: 30px 10px;
+}
+
+/* Картинка-карта */
+.map {
+  border: 6px double #6b4c2f;
+  border-radius: 12px;
+  max-width: 90%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Ссылки */
+a {
+  color: #7c4f28;
+  text-decoration: none;
+}
+
+/* Области карты */
+area {
+  cursor: pointer;
+}
+
+/* Футер */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #D3D3D3;
+  color: #4d3929;
+  border-top: 3px solid #a1845c;
+}
+
+/* Контейнер карты */
+.map-container {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+
+/* Указатель на город */
+.city-marker {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: royalblue;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+
+.city-marker:hover {
+  background: gold;
+}
