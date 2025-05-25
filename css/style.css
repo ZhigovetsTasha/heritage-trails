@@ -108,3 +108,15 @@ footer {
 .city-marker:hover {
   background: gold;
 }
+
+.overlay-block {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  background-color: rgba(255, 255, 255, 0.7); /* полупрозрачный белый */
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  color: #2f1d0d; /* основной текст */
+  font-size: 1.1em;
+}
+
