@@ -47,6 +47,16 @@ header p {
   font-style: italic;
   color: #4d3929;
 }
+p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 5;
+  margin-right: 0;
+  text-indent:30px;
+}
+
+
 
 /* Контент */
 main {
@@ -74,6 +84,7 @@ area {
   cursor: pointer;
 }
 
+
 /* Футер */
 footer {
   text-align: center;
@@ -81,6 +92,7 @@ footer {
   background-color: #D3D3D3;
   color: #4d3929;
   border-top: 3px solid #a1845c;
+  margin-top:auto;
 }
 
 /* Контейнер карты */
@@ -121,3 +133,8 @@ footer {
   font-size: 1.1em;
 }
 
+
+.tight-list {
+  list-style-position: inside; /* маркеры внутри, текст сразу после точки */
+  padding-left: 0; /* убираем отступ слева */
+}
