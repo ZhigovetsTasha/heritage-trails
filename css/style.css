@@ -12,6 +12,7 @@ body {
   color: #2f1d0d;
   font-family: 'Georgia', serif;
   background-image: none;
+  margin-left: 180px; /* ширина панели */
 }
 
 /* Полупрозрачный фон */
@@ -143,35 +144,51 @@ footer {
   position: fixed;
   top: 0;
   left: 0;
-  width: 180px;
-  height: 100%;
-  background-color: #f0e8d9;
-  border-right: 2px solid #a1845c;
-  padding-top: 30px;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-  z-index: 100;
+  width: 200px;
+  height: 100vh;
+  background-color: #D3D3D3;
+  padding: 10px;
+  font-family: 'Georgia', serif;
+  border-right: 1px solid #a1845c;
+  overflow-y: auto; /* Добавляем прокрутку */
+  z-index: 1000;
+  box-sizing: border-box;
 }
 
 .side-menu ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .side-menu li {
-  margin: 15px 0;
-  text-align: center;
+  margin-bottom: 10px;
 }
 
-.side-menu a {
-  text-decoration: none;
-  color: #2f1d0d;
-  font-weight: bold;
+.side-menu a,
+.side-menu label {
   display: block;
-  padding: 10px;
-  transition: background 0.3s;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #7c4f28;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.side-menu a:hover {
-  background-color: #d7c5ab;
+.side-menu a:hover,
+.side-menu label:hover {
+  background-color: #a1845c;
+  color: white;
+}
+
+/* Подменю скрыты по умолчанию */
+.side-menu .submenu {
+  display: none;
+  margin-left: 10px;
+}
+
+/* Показывать подменю при активном checkbox */
+.side-menu input[type="checkbox"]:checked + label + .submenu {
+  display: block;
 }

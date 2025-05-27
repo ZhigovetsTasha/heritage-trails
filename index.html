@@ -7,10 +7,42 @@
 		<link rel="stylesheet" href="css/style.css">
 </head>
 		<body>
+<nav class="side-menu">
+  <ul>
+    <li><a href="index.html">Главная</a></li>
+
+    <li>
+      <input type="checkbox" id="toggle-polotsk" hidden>
+      <label for="toggle-polotsk">Полоцк</label>
+      <ul class="submenu">
+        <li><a href="sopfsabor.html">Софийский собор</a></li>
+        <li><a href="iezuit.html">Иезуитский Коллегиум</a></li>
+        <li><a href="efmonast.html">Ефросиниевский монастырь</a></li>
+        <li><a href="fskorina.html">Памятник Скорины</a></li>
+        <li><a href="muzknig.html">Музей книгопечатания</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <input type="checkbox" id="toggle-brest" hidden>
+      <label for="toggle-brest">Брест</label>
+      <ul class="submenu">
+        <li><a href="brestkrepost.html">Брестская крепость</a></li>
+        <li><a href="sohchen.html">Музей ценностей</a></li>
+        <li><a href="zd.html">Железнодорожный музей</a></li>
+        <li><a href="allea.html">Аллея фонарей</a></li>
+        <li><a href="5fort.html">5 форт</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
 			<header>
 				<h1>Тропами наследия</h1>
 				<p>Учебно-методическое пособие</p>
 			</header>
+
 			<main>
 				<div class="overlay-block">
 					<p align="right">
@@ -61,23 +93,17 @@
 					<p align="justify">Актуальность данного пособия обусловлена необходимостью улучшения качества образовательного процесса через практическое взаимодействие учащихся с культурной и исторической средой.</p>
 					<h2>Выберите город на карте</h2>
 				</div>
-				
 				<div class="map-container">
 					<img src="img/belarus-map.png" usemap="#belarus" alt="Карта Беларуси" class="map" width="100%" height="auto">
 						<!-- Указатель -->
-						<a href="polotsk.html" class="city-marker" style="left: 57%; top: 18%;" title="Полоцк"/> </a>
-						<a href="brest.html" class="city-marker" style="left: 13%; top: 77%;" title="Брест"/></a>
-				
-					</div>
-					
-					
-				</main>
-				
-				<footer>
-					<p>&copy; 2025 Тропами наследия</p>
-				</footer>
-				
-				
-				
-			</body>
-		</html>
+						<a href="polotsk.html" class="city-marker" style="left: 57%; top: 18%;" title="Полоцк"/>
+					</a>
+					<a href="brest.html" class="city-marker" style="left: 13%; top: 77%;" title="Брест"/>
+				</a>
+			</div>
+		</main>
+		<footer>
+			<p>&copy; 2025 Тропами наследия</p>
+		</footer>
+	</body>
+</html>
