@@ -36,8 +36,7 @@ header {
   padding: 20px 10px;
   border-bottom: 3px solid #a1845c;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  width:80%;
-
+  
 }
 
 header h1 {
@@ -197,7 +196,7 @@ footer {
 
 @media (max-width: 768px) {
   .side-menu {
-    width: 100px;
+    width: 110px;
 	height:auto;
 	
     font-size: 14px;
