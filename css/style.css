@@ -36,7 +36,7 @@ header {
   padding: 20px 10px;
   border-bottom: 3px solid #a1845c;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  
+  width:100%
 }
 
 header h1 {
@@ -95,6 +95,7 @@ footer {
   color: #4d3929;
   border-top: 3px solid #a1845c;
   margin-top:auto;
+  width:100%;
 }
 
 /* Контейнер карты */
@@ -217,3 +218,15 @@ footer {
     color: #fff;
   }
 }
+.side-menu ul.submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  /* остальные стили */
+}
+
+.side-menu li:hover > ul.submenu {
+  display: block;
+}
+
