@@ -192,3 +192,20 @@ footer {
 .side-menu input[type="checkbox"]:checked + label + .submenu {
   display: block;
 }
+
+@media (max-width: 768px) {
+  .side-menu {
+    width: 140px;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .side-menu a,
+  .side-menu label {
+    padding: 6px 10px;
+  }
+
+  .side-menu .submenu {
+    margin-left: 6px;
+  }
+}
