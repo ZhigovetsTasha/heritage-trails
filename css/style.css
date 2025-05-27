@@ -12,7 +12,7 @@ body {
   color: #2f1d0d;
   font-family: 'Georgia', serif;
   background-image: none;
-  margin-left: 180px; /* ширина панели */
+ 
 }
 
 /* Полупрозрачный фон */
@@ -141,74 +141,79 @@ footer {
   padding-left: 0; /* убираем отступ слева */
 }
 
-.side-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 100vh;
-  background-color: #D3D3D3;
-  padding: 10px;
-  font-family: 'Georgia', serif;
-  border-right: 1px solid #a1845c;
-  overflow-y: auto; /* Добавляем прокрутку */
-  z-index: 1000;
-  box-sizing: border-box;
-}
-
-.side-menu ul {
-  list-style: none;
-  padding: 0;
+.dropdown-menu {
+  background-color: #f7f3e9;
   margin: 0;
+  padding: 0;
 }
 
-.side-menu li {
-  margin-bottom: 10px;
+.dropdown-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #d3d3d3;
 }
 
-.side-menu a,
-.side-menu label {
+.dropdown-menu li {
+  position: relative;
+}
+
+.dropdown-menu a,
+.dropdown-menu .menu-title {
   display: block;
-  padding: 8px 12px;
+  padding: 10px 16px;
   text-decoration: none;
   color: #7c4f28;
-  background-color: transparent;
-  border-radius: 4px;
+  font-family: 'Georgia', serif;
+  white-space: nowrap;
   cursor: pointer;
 }
 
-.side-menu a:hover,
-.side-menu label:hover {
+.dropdown-menu a:hover,
+.dropdown-menu .menu-title:hover {
   background-color: #a1845c;
-  color: white;
+  color: #fff;
 }
 
-/* Подменю скрыты по умолчанию */
-.side-menu .submenu {
+/* Скрываем подменю */
+.dropdown-menu ul li ul {
   display: none;
-  margin-left: 10px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  background-color: #f7f3e9;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
 }
 
-/* Показывать подменю при активном checkbox */
-.side-menu input[type="checkbox"]:checked + label + .submenu {
+/* Показываем подменю при наведении */
+.dropdown-menu li:hover > ul {
   display: block;
 }
 
-@media (max-width: 768px) {
-  .side-menu {
-    width: 110px;
-	height:auto;
-	
-    font-size: 14px;
-    padding: 8px;
+/* Адаптивное меню для мобильных */
+@media screen and (max-width: 768px) {
+  .dropdown-menu ul {
+    flex-direction: column;
+    align-items: stretch;
   }
 
-  .side-menu a,
-  .side-menu label {
-    padding: 6px 10px;
+  .dropdown-menu li ul {
+    position: static;
+    box-shadow: none;
+    display: none;
   }
 
-  .side-menu .submenu {
-    margin-left: 6px;
+  .dropdown-menu li:focus-within ul {
+    display: block;
+  }
+
+  .dropdown-menu li:focus-within .menu-title {
+    background-color: #a1845c;
+    color: #fff;
   }
 }
