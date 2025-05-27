@@ -37,27 +37,35 @@ header {
   border-bottom: 3px solid #a1845c;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   width:100%
+  box-sizing: border-box;
 }
 
 header h1 {
-  font-size: 1.6em; /* уменьшение размера для телефонов */
+  font-size: 2em;
+  margin: 10px 0;
+  padding: 0 16px;
   word-wrap: break-word;
   overflow-wrap: break-word;
   white-space: normal;
   line-height: 1.2;
-  margin: 10px 0;
-  padding: 0 10px;
-  text-align: center;
   box-sizing: border-box;
+  max-width: 100%;
 }
 
-/* Медиазапрос для маленьких экранов */
-@media screen and (max-width: 480px) {
+/* Уточнение для узких экранов */
+@media screen and (max-width: 600px) {
   header h1 {
-    font-size: 1.3em;
+    font-size: 1.4em;
+    padding: 0 12px;
   }
 }
 
+@media screen and (max-width: 400px) {
+  header h1 {
+    font-size: 1.2em;
+    padding: 0 10px;
+  }
+}
 header p {
   margin-top: 5px;
   font-style: italic;
