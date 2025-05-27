@@ -179,54 +179,67 @@ footer {
   color: #fff;
 }
 
-/* Скрываем подменю */
-.dropdown-menu ul li ul {
+/* Подменю */
+.dropdown-menu ul.submenu,
+.dropdown-menu li ul {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 180px;
   background-color: #f7f3e9;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+  min-width: 180px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-radius: 8px;
   z-index: 1000;
 }
 
-/* Показываем подменю при наведении */
-.dropdown-menu li:hover > ul {
+.dropdown-menu li:hover > ul,
+.dropdown-menu li:focus-within > ul {
   display: block;
 }
 
-/* Адаптивное меню для мобильных */
+/* Списки */
+.tight-list {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+/* Адаптивное меню */
 @media screen and (max-width: 768px) {
   .dropdown-menu ul {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .dropdown-menu li ul {
-    position: static;
-    box-shadow: none;
-    display: none;
+  .dropdown-menu li {
+    width: 100%;
   }
 
-  .dropdown-menu li:focus-within ul {
+  .dropdown-menu ul.submenu,
+  .dropdown-menu li ul {
+    position: static;
+    display: none;
+    width: 100%;
+    box-shadow: none;
+    padding-left: 20px;
+    background-color: #f7f3e9;
+  }
+
+  .dropdown-menu li:hover > ul,
+  .dropdown-menu li:focus-within > ul {
     display: block;
   }
 
-  .dropdown-menu li:focus-within .menu-title {
-    background-color: #a1845c;
-    color: #fff;
+  .dropdown-menu a,
+  .dropdown-menu .menu-title {
+    padding: 12px 16px;
+    font-size: 1em;
+  }
+
+  body {
+    overflow-x: hidden;
   }
 }
-.side-menu ul.submenu {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  /* остальные стили */
-}
-
-.side-menu li:hover > ul.submenu {
-  display: block;
-}
-
