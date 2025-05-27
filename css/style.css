@@ -181,11 +181,11 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   background-color: #d3d3d3;
-  .dropdown-menu ul {
+ 
   box-sizing: border-box;
   max-width: 100%;
   overflow-x: auto;
-}
+
 }
 
 .dropdown-menu li {
