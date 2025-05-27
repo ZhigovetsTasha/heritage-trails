@@ -16,9 +16,9 @@
   <ul>
     <li><a href="index.html">Главная</a></li>
 
-    <li>
-	<a href="polotsk.html">Полоцк</a>
-    <!--  <span class="menu-title">Полоцк</span>  -->
+    <li class="has-submenu">
+	 <a href="#" class="menu-title">Полоцк</a>
+  <ul class="submenu">
       <ul>
         <li><a href="sopfsabor.html">Софийский собор</a></li>
         <li><a href="iezuit.html">Иезуитский Коллегиум</a></li>
@@ -28,9 +28,9 @@
       </ul>
     </li>
 
-    <li>
-   
-	  <a href="brest.html">Брест</a>
+    <li class="has-submenu">
+  <a href="#" class="menu-title">Брест</a>
+  <ul class="submenu">
       <ul>
         <li><a href="brestkrepost.html">Брестская крепость</a></li>
         <li><a href="sohchen.html">Музей ценностей</a></li>
@@ -107,5 +107,25 @@
 		<footer>
 			<p>&copy; 2025 Тропами наследия</p>
 		</footer>
+		<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const submenuToggles = document.querySelectorAll('.menu-title');
+
+    submenuToggles.forEach(function (toggle) {
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault(); // Останавливает переход по ссылке
+
+        const parent = toggle.closest('.has-submenu');
+        parent.classList.toggle('open');
+
+        // Закрываем другие подменю
+        document.querySelectorAll('.has-submenu').forEach(function (item) {
+          if (item !== parent) item.classList.remove('open');
+        });
+      });
+    });
+  });
+</script>
+
 	</body>
 </html>

@@ -265,3 +265,11 @@ footer {
     overflow-x: hidden;
   }
 }
+
+.dropdown-menu .submenu {
+  display: none;
+}
+
+.dropdown-menu .has-submenu.open .submenu {
+  display: block;
+}
