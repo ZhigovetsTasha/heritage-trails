@@ -254,9 +254,9 @@ footer {
     box-sizing: border-box;
     white-space: normal; /* перенос слов если нужно */
   }
-  body {
+ /* body {
     overflow-x: hidden;
-  }
+  }*/
 }
 
 .dropdown-menu .submenu {
