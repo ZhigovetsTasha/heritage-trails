@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title> Минск| Тропами наследия</title>
+		<link rel="stylesheet" href="css/style.css">
+</head>
+		<body>
+
+			<header>
+				<a href="minsk.html">← Назад к Минску</a>
+				<h1>Достопримечательности Минска</h1>
+				<nav class="dropdown-menu">
+  <ul>
+    <li><a href="index.html">Главная</a></li>
+
+    <li class="has-submenu">
+      <a href="#" class="menu-title">Полоцк</a>
+      <ul class="submenu">
+        <li><a href="sopfsabor.html">Софийский собор</a></li>
+        <li><a href="iezuit.html">Иезуитский Коллегиум</a></li>
+        <li><a href="efmonast.html">Спасо-Ефросиниевский монастырь</a></li>
+        <li><a href="fskorina.html">Памятник Скорины</a></li>
+        <li><a href="muzknig.html">Музей книгопечатания</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu">
+      <a href="#" class="menu-title">Брест</a>
+      <ul class="submenu">
+        <li><a href="brestkrepost.html">Брестская крепость</a></li>
+        <li><a href="sohchen.html">Музей ценностей</a></li>
+        <li><a href="zd.html">Ж/д музей</a></li>
+        <li><a href="allea.html">Аллея фонарей</a></li>
+        <li><a href="5fort.html">5-й форт</a></li>
+      </ul>
+    </li>
+	 <li class="has-submenu">
+      <a href="#" class="menu-title">Минск</a>
+      <ul class="submenu">
+        <li><a href="zoo.html">Зоопарк</a></li>
+        <li><a href="MVOV.html">Музей Великой Отечественной войны</a></li>
+        <li><a href="zd.html">Ж/д музей</a></li>
+    
+      </ul>
+    </li>
+  </ul>
+</nav>
+			</header>
+			<main>
+				<div class="overlay-block">
+					<img src="img/zoo.png" alt="Зоопарк" class="city-photo" width="100%" height="auto">
+						<h2>Зоопарк</h2>
+						<p align="justify">Минский зоопарк — один из самых любимых уголков природы в столице Беларуси. Он расположен в пойме реки Свислочь и является домом для более чем 2 000 животных и свыше 400 видов, включая редких и экзотических обитателей со всего мира.</p>
+						<p align="justify">Здесь можно увидеть не только традиционных животных, но и познакомиться с обитателями экзотариума «Ориноко» — павильона, воссоздающего природу Южной Америки. Посетители могут наблюдать ягуаров, капибару, анаконд, пираний, арапаим, тропических птиц, рептилий и редких амфибий.</p>
+						<p align="justify">Особая гордость зоопарка — дельфинарий «Немо», в котором проходят зрелищные и познавательные представления. В них участвуют морские котики, морской лев и черноморские дельфины. Зрителям рассказывают об этих удивительных созданиях, их повадках и важности охраны морской природы.</p>
+						<img src="img/zoo1.png" alt="Дельфинарий" class="city-photo" width="100%" height="auto">
+						<p align="justify">На территории зоопарка также работает Динопарк — интерактивная зона с реалистичными фигурами динозавров в натуральную величину. Они двигаются, рычат и создают ощущение настоящего доисторического мира. Это место особенно нравится детям и отлично подходит для семейных прогулок.</p>
+						<img src="img/zoo2.png" alt="Зоопарк" class="city-photo" width="100%" height="auto">
+						<p align="justify">Минский зоопарк — не просто выставка животных, а живой образовательный и развлекательный комплекс, где можно интересно и с пользой провести целый день.</p>
+						
+						
+							<p align="justify"><b>Пройди тест для закрепления результата.</b></p>
+							<a href=""><p>Тест</p></a>
+							<img src="img/testzoo.png"  alt="QR-код для теста" width="100%" height="auto">
+					</div>
+				</main>
+				<footer>
+					<p>&copy; 2025 Тропами наследия</p>
+				</footer>
+					<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const submenuToggles = document.querySelectorAll('.menu-title');
+
+    submenuToggles.forEach(function (toggle) {
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault(); // Останавливает переход по ссылке
+
+        const parent = toggle.closest('.has-submenu');
+        parent.classList.toggle('open');
+
+        // Закрываем другие подменю
+        document.querySelectorAll('.has-submenu').forEach(function (item) {
+          if (item !== parent) item.classList.remove('open');
+        });
+      });
+    });
+  });
+</script>
+			</body>
+		</html>

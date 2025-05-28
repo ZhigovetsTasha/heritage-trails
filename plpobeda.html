@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title> Минск| Тропами наследия</title>
+		<link rel="stylesheet" href="css/style.css">
+</head>
+		<body>
+
+			<header>
+				<a href="minsk.html">← Назад к Минску</a>
+				<h1>Достопримечательности Минска</h1>
+				<nav class="dropdown-menu">
+  <ul>
+    <li><a href="index.html">Главная</a></li>
+
+    <li class="has-submenu">
+      <a href="#" class="menu-title">Полоцк</a>
+      <ul class="submenu">
+        <li><a href="sopfsabor.html">Софийский собор</a></li>
+        <li><a href="iezuit.html">Иезуитский Коллегиум</a></li>
+        <li><a href="efmonast.html">Спасо-Ефросиниевский монастырь</a></li>
+        <li><a href="fskorina.html">Памятник Скорины</a></li>
+        <li><a href="muzknig.html">Музей книгопечатания</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu">
+      <a href="#" class="menu-title">Брест</a>
+      <ul class="submenu">
+        <li><a href="brestkrepost.html">Брестская крепость</a></li>
+        <li><a href="sohchen.html">Музей ценностей</a></li>
+        <li><a href="zd.html">Ж/д музей</a></li>
+        <li><a href="allea.html">Аллея фонарей</a></li>
+        <li><a href="5fort.html">5-й форт</a></li>
+      </ul>
+    </li>
+	 <li class="has-submenu">
+      <a href="#" class="menu-title">Минск</a>
+      <ul class="submenu">
+        <li><a href="zoo.html">Зоопарк</a></li>
+        <li><a href="MVOV.html">Музей Великой Отечественной войны</a></li>
+        <li><a href="zd.html">Ж/д музей</a></li>
+    
+      </ul>
+    </li>
+  </ul>
+</nav>
+			</header>
+			<main>
+				<div class="overlay-block">
+					<img src="img/plpobeda.png" alt="Площадь Победы" class="city-photo" width="100%" height="auto">
+					<img src="img/plpobeda2.png" alt="Площадь Победы" class="city-photo" width="100%" height="auto">
+						<h2>Площадь Победы</h2>
+						<p align="justify">Площадь Победы — одно из самых узнаваемых и значимых мест в центре Минска, символ памяти о подвиге белорусского народа в годы Великой Отечественной войны. Она расположена на проспекте Независимости, вблизи набережной Свислочи, и служит не только архитектурной доминантой, но и важным мемориальным пространством.</p>
+						<p align="justify">История площади уходит корнями в довоенное время. До 1958 года она носила название Круглая площадь. Её архитектурное оформление формировалось с конца 1930-х годов и продолжалось в течение десятилетий, включая послевоенные генеральные планы и проект 1950 года. Площадь имеет чёткую геометрию — прямоугольную форму (225 на 175 м), переходящую в полукруг. Пространство делится на две части: аванплощадь и круглая центральная зона, где и возвышается главный памятник.</p>
+						<p align="justify">В центре площади расположен гранитный монумент Победы — величественный обелиск высотой около 40 метров, увенчанный изображением ордена Победы. Он был установлен в 1954 году в честь солдат Красной армии и белорусских партизан, павших в боях за освобождение республики. У основания обелиска находится священный меч Победы, обвитый бронзовой лавровой ветвью, а на постаменте размещены четыре горельефа, раскрывающие тему героизма, сопротивления и освобождения. Ступени обрамлены бронзовыми венками, символизирующими память и скорбь.</p>
+						<p align="justify">3 июля 1961 года, в день 17-й годовщины освобождения Минска, у подножия монумента был торжественно зажжён вечный огонь. Это сделал Герой Советского Союза, генерал-полковник Александр Бурдейный, ставший первым почётным гражданином города.</p>
+						<p align="justify">Позже, к 40-летию Победы, 8 мая 1985 года, под площадью был открыт Мемориальный зал, посвящённый Героям Советского Союза, отдавшим жизни за свободу Беларуси. Он находится внутри подземного перехода и стал неотъемлемой частью комплекса памяти.</p>
+						<p align="justify">Площадь Победы сегодня — это не только историко-культурное пространство, но и место, где проходят торжественные церемонии, парады, минуты молчания. Здесь сочетаются торжественность и тишина, монументальность и живая городская динамика — ведь под площадью проходит Московская линия Минского метрополитена, связывающая прошлое и настоящее.</p>
+		
+						<img src="img/plpobeda1.png" alt="Площадь Победы" class="city-photo" width="100%" height="auto">
+							<p align="justify"><b>Пройди тест для закрепления результата.</b></p>
+							<a href=""><p>Тест</p></a>
+							<img src="img/testplpobeda.png"  alt="QR-код для теста" width="100%" height="auto">
+					</div>
+				</main>
+				<footer>
+					<p>&copy; 2025 Тропами наследия</p>
+				</footer>
+					<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const submenuToggles = document.querySelectorAll('.menu-title');
+
+    submenuToggles.forEach(function (toggle) {
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault(); // Останавливает переход по ссылке
+
+        const parent = toggle.closest('.has-submenu');
+        parent.classList.toggle('open');
+
+        // Закрываем другие подменю
+        document.querySelectorAll('.has-submenu').forEach(function (item) {
+          if (item !== parent) item.classList.remove('open');
+        });
+      });
+    });
+  });
+</script>
+			</body>
+		</html>
