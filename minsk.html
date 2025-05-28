@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Брест | Тропами наследия</title>
+		<link rel="stylesheet" href="css/style.css">
+</head>
+		<body>
+
+			<header>
+				<a href="index.html">← На главную</a>
+				<h1>Тропами наследия</h1>
+				<nav class="dropdown-menu">
+  <ul>
+    <li><a href="index.html">Главная</a></li>
+
+    <li class="has-submenu">
+      <a href="#" class="menu-title">Полоцк</a>
+      <ul class="submenu">
+        <li><a href="sopfsabor.html">Софийский собор</a></li>
+        <li><a href="iezuit.html">Иезуитский Коллегиум</a></li>
+        <li><a href="efmonast.html">Спасо-Ефросиниевский монастырь</a></li>
+        <li><a href="fskorina.html">Памятник Скорины</a></li>
+        <li><a href="muzknig.html">Музей книгопечатания</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu">
+      <a href="#" class="menu-title">Брест</a>
+      <ul class="submenu">
+        <li><a href="brestkrepost.html">Брестская крепость</a></li>
+        <li><a href="sohchen.html">Музей ценностей</a></li>
+        <li><a href="zd.html">Ж/д музей</a></li>
+        <li><a href="allea.html">Аллея фонарей</a></li>
+        <li><a href="5fort.html">5-й форт</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+			</header>
+			<main>
+				<div class="overlay-block">
+					<img src="img/minsk.png" alt="Минск" class="city-photo" width="100%" height="auto">
+						<!--  </div>
+    <div>   -->         <h2>Минск</h2>
+						<p align="justify">Минск — столица Беларуси, город с глубокой историей, корни которой уходят в глубокое прошлое Восточной Европы. Первое упоминание о нём датируется 1067 годом в «Повести временных лет», когда он стал ареной битвы на реке Немиге между князьями Ярославичами и полоцким князем Всеславом Чародеем. Эта кровавая страница истории положила начало летописному существованию города.</p>
+						<p align="justify">В Средние века Минск входил в состав Полоцкого княжества, затем — Великого княжества Литовского, а с XVI века стал частью Речи Посполитой. В 1793 году после второго раздела Польши город вошёл в состав Российской империи. Минск быстро развивался, становясь важным торгово-ремесленным и административным центром.</p>
+						<p align="justify">XX век принёс испытания и перемены. В 1919 году Минск стал столицей Белорусской Советской Социалистической Республики. В годы Великой Отечественной войны город был почти полностью разрушен, но после войны его отстроили заново, придав столице монументальный сталинский облик с просторными проспектами и величественными зданиями.</p>
+						<p align="justify">Сегодня Минск — современный, динамично развивающийся мегаполис, в котором сочетаются история и современность. Уютные улочки Верхнего города, тишина Троицкого предместья, величие проспекта Независимости и светлая память об ушедших временах — всё это делает Минск не просто административным центром, а культурным и духовным сердцем страны.</p>
+						<h2>Среди достопримечательностей Минска особенно выделяются:</h2>
+						<ul class="tight-list">
+							<li align="justify">
+								<a href="brestkrepost.html"></a>
+							</li>
+							<li align="justify">
+								<a href="sohchen.html"/></a>
+							</li>
+							<li align="justify">
+								<a href="zd.html"/></a>
+							</li>
+							<li align="justify">
+								<a href="allea.html"/></a>
+							<li align="justify">
+								<a href="5fort.html"/></a>
+							</li>
+						</ul>
+						<p align="justify"></p>
+					</div>
+				</main>
+				<footer>
+					<p>&copy; 2025 Тропами наследия</p>
+				</footer>
+					<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const submenuToggles = document.querySelectorAll('.menu-title');
+
+    submenuToggles.forEach(function (toggle) {
+      toggle.addEventListener('click', function (e) {
+        e.preventDefault(); // Останавливает переход по ссылке
+
+        const parent = toggle.closest('.has-submenu');
+        parent.classList.toggle('open');
+
+        // Закрываем другие подменю
+        document.querySelectorAll('.has-submenu').forEach(function (item) {
+          if (item !== parent) item.classList.remove('open');
+        });
+      });
+    });
+  });
+</script>
+			</body>
+		</html>
