@@ -236,31 +236,24 @@ footer {
     align-items: stretch;
   }
 
-  .dropdown-menu li {
-    width: 100%;
-  }
-
-  .dropdown-menu ul.submenu,
   .dropdown-menu li ul {
     position: static;
     display: none;
     width: 100%;
-    box-shadow: none;
-    padding-left: 0px;
-    background-color: #f7f3e9;
   }
 
-  .dropdown-menu li:hover > ul,
-  .dropdown-menu li:focus-within > ul {
+  .dropdown-menu li:focus-within ul,
+  .dropdown-menu li:hover ul {
     display: block;
   }
 
   .dropdown-menu a,
   .dropdown-menu .menu-title {
-    padding: 12px 16px;
-    font-size: 1em;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    white-space: normal; /* перенос слов если нужно */
   }
-
   body {
     overflow-x: hidden;
   }
